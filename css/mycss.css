@@ -1,4 +1,76 @@
-h1 {
-  margin: 0; 
-  size: 12; 
+/* Універсальний селектор */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Селектор класу */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Селектор атрибуту */
+a[href*="index.html"] {
+  color: blue;
+}
+
+/* Псевдокласи */
+.container:first-child {
+  margin-bottom: 20px;
+}
+
+.container:last-child {
+  margin-top: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:not([href]) {
+  color: red;
+}
+
+input:checked {
+  background-color: green;
+}
+
+/* Псевдоелементи */
+p::first-line {
+  font-weight: bold;
+  color: red;
+}
+
+p::first-letter {
+  font-size: 2em;
+}
+
+/* Границі, заповнювачі и рамки */
+.container {
+  border-width: thin;
+  border-color: black;
+  border-style: dashed;
+}
+
+/* Позиціювання елементiв */
+.container {
+  display: flex;
+  position: static;
+}
+
+/* Візуалізація елементiв */
+.container {
+  max-width: 100%;
+  height: auto;
+  line-height: 1.6;
+  overflow: auto;
+}
+
+/* Колір фон */
+body {
+  color: black;
+  background-color: white;
 }
